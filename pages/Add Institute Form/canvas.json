@@ -443,7 +443,7 @@
                         "boolean"
                       ],
                       "topRow": 26,
-                      "bottomRow": 31,
+                      "bottomRow": 30,
                       "parentRowSpace": 10,
                       "type": "CHECKBOX_WIDGET",
                       "alignWidget": "LEFT",
@@ -622,8 +622,8 @@
                       "searchTags": [
                         "boolean"
                       ],
-                      "topRow": 32,
-                      "bottomRow": 37,
+                      "topRow": 31,
+                      "bottomRow": 35,
                       "parentRowSpace": 10,
                       "type": "SWITCH_WIDGET",
                       "alignWidget": "LEFT",
@@ -704,6 +704,7 @@
                       "hideCard": false,
                       "mobileRightColumn": 21,
                       "parentColumnSpace": 18.8095703125,
+                      "dynamicTriggerPathList": [],
                       "labelPosition": "Top",
                       "key": "oh5u38qg5n",
                       "labelTextSize": "0.875rem",
@@ -711,7 +712,7 @@
                       "rightColumn": 21,
                       "widgetId": "blncfebwpx",
                       "minWidth": 450,
-                      "label": "Label",
+                      "label": "Institute Name",
                       "parentId": "iggtsllgeu",
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
