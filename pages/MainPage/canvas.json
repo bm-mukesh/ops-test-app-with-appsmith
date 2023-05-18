@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "MainPage",
+    "slug": "mainpage",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 620,
+          "bottomRow": 700,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -504,13 +504,64 @@
               "maxDynamicHeight": 9000,
               "fontSize": "1rem",
               "minDynamicHeight": 4
+            },
+            {
+              "resetFormOnClick": false,
+              "boxShadow": "none",
+              "mobileBottomRow": 70,
+              "widgetName": "Button1",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 66,
+              "bottomRow": 70,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 28,
+              "animateLoading": true,
+              "parentColumnSpace": 14.078125,
+              "leftColumn": 12,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "text": "Submit",
+              "isDisabled": false,
+              "key": "0k4dgen3hw",
+              "isDeprecated": false,
+              "rightColumn": 28,
+              "isDefaultClickDisabled": true,
+              "widgetId": "iva9pikguj",
+              "minWidth": 120,
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 66,
+              "responsiveBehavior": "hug",
+              "disabledWhenInvalid": false,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 12,
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
             }
           ]
         },
         "layoutOnLoadActions": [
           [
             {
-              "id": "Page1_ApiInstitute",
+              "id": "MainPage_ApiInstitute",
               "name": "ApiInstitute",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -521,14 +572,15 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "MainPage",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": true
   },
   "deleted": false,
   "gitSyncId": "64645d12a63f65753dcb2316_64645d12a63f65753dcb2318"
