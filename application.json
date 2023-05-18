@@ -23,11 +23,11 @@
   "unpublishedApplicationDetail": {
     "navigationSetting": {
       "showNavbar": true,
-      "orientation": "side",
-      "navStyle": "sidebar",
+      "orientation": "top",
+      "navStyle": "stacked",
       "position": "static",
       "itemStyle": "text",
-      "colorStyle": "theme",
+      "colorStyle": "light",
       "logoAssetId": "64645eb4a63f65753dcb2326",
       "logoConfiguration": "logoAndApplicationTitle",
       "showSignIn": true
