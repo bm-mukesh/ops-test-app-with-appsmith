@@ -31,7 +31,11 @@
               "borderColor": "#E0DEDE",
               "widgetName": "Form1",
               "isCanvas": true,
-              "dynamicPropertyPathList": [],
+              "dynamicPropertyPathList": [
+                {
+                  "key": "isVisible"
+                }
+              ],
               "displayName": "Form",
               "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
               "searchTags": [
@@ -190,7 +194,13 @@
                       "boxShadow": "none",
                       "mobileBottomRow": 37,
                       "widgetName": "Button1",
+                      "onClick": "",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -302,6 +312,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -350,7 +363,7 @@
                       "mobileLeftColumn": 0,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": " ",
+                      "defaultText": "  {{ appsmith.store.editRow.instituteName}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -368,6 +381,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -415,7 +431,7 @@
                       "mobileLeftColumn": 0,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "  {{ appsmith.store.editRow.registeredDetails}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -498,6 +514,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -545,7 +564,7 @@
                       "mobileLeftColumn": 0,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "  {{ appsmith.store.editRow.instituteDomain}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -672,6 +691,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -717,7 +739,7 @@
                       "mobileLeftColumn": 23,
                       "maxDynamicHeight": 9000,
                       "iconAlign": "left",
-                      "defaultText": "0000 0000 00",
+                      "defaultText": "   {{ appsmith.store.editRow.registerPhone}}",
                       "minDynamicHeight": 4
                     },
                     {
@@ -735,6 +757,9 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
                         }
                       ],
                       "labelStyle": "",
@@ -783,7 +808,7 @@
                       "maxDynamicHeight": 9000,
                       "shouldAllowAutofill": true,
                       "iconAlign": "left",
-                      "defaultText": "",
+                      "defaultText": "  {{ appsmith.store.editRow.registerName}}",
                       "minDynamicHeight": 4
                     }
                   ],
@@ -814,7 +839,7 @@
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "ka9vas7a0k",
               "minWidth": 450,
-              "isVisible": true,
+              "isVisible": "true",
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
@@ -824,7 +849,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 3,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 58,
+              "originalBottomRow": 56,
               "minDynamicHeight": 10
             }
           ]

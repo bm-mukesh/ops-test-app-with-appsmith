@@ -128,7 +128,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1684832042581,
+              "columnUpdatedAt": 1684837151561,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -137,12 +137,12 @@
               "defaultPageSize": 0,
               "columnOrder": [
                 "_id",
+                "customColumn5",
                 "isInhouse",
                 "instituteDomain",
                 "logo",
                 "instituteName",
                 "isActive",
-                "customColumn5",
                 "registeredDetails",
                 "customColumn1",
                 "customColumn2",
@@ -387,7 +387,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "registeredDetails",
+                  "label": "registeredFullName",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredDetails\"].name))}}",
@@ -402,7 +402,7 @@
                   "width": 150,
                   "originalId": "customColumn1",
                   "id": "customColumn1",
-                  "alias": " ",
+                  "alias": "registeredEmail",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -415,7 +415,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": true,
-                  "label": "customColumn1",
+                  "label": "registeredEmail",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredDetails\"].email))}}",
@@ -431,7 +431,7 @@
                   "width": 150,
                   "originalId": "customColumn2",
                   "id": "customColumn2",
-                  "alias": "Register Name",
+                  "alias": "registerName",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -460,7 +460,7 @@
                   "width": 150,
                   "originalId": "customColumn3",
                   "id": "customColumn3",
-                  "alias": "Register phone",
+                  "alias": "registerPhone",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -514,7 +514,7 @@
                   "borderRadius": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
                   "boxShadow": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
                   "customAlias": "",
-                  "onClick": "{{navigateTo('Institute Details', { \n\t\"editROw\" : currentRow\n //\"key\": \"value\",\n}, 'SAME_WINDOW');\n//save edit current Instute referance.\nstoreValue('editRow', currentRow._id)\n \n}}\n "
+                  "onClick": "{{navigateTo('Institute Details', { \n\t\"editRow\" : currentRow\n //\"key\": \"value\",\n}, 'SAME_WINDOW');\n//save edit current Instute referance;\nstoreValue('editRow', currentRow);\n  \n}}\n "
                 }
               },
               "key": "birftls4jx",
