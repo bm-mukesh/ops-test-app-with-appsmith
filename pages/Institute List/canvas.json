@@ -99,6 +99,12 @@
                 },
                 {
                   "key": "primaryColumns.customColumn6.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.registeredOn.computedValue"
+                },
+                {
+                  "key": "primaryColumns.expiresOn.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -137,7 +143,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1684841837227,
+              "columnUpdatedAt": 1684846644393,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -156,7 +162,9 @@
                 "registeredDetails",
                 "customColumn1",
                 "customColumn2",
-                "customColumn3"
+                "customColumn3",
+                "registeredOn",
+                "expiresOn"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -568,6 +576,66 @@
                   "customAlias": "",
                   "buttonLabel": "Edit",
                   "onClick": "{{navigateTo('Edit Institute', { \n\t\"editRow\" : currentRow\n //\"key\": \"value\",\n}, 'SAME_WINDOW');\n//save edit current Instute referance;\nstoreValue('editRow', currentRow);\n  \n}}\n "
+                },
+                "registeredOn": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 5,
+                  "width": 150,
+                  "originalId": "registeredOn",
+                  "id": "registeredOn",
+                  "alias": "registeredOn",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "registeredOn",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredOn\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "expiresOn": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 6,
+                  "width": 150,
+                  "originalId": "expiresOn",
+                  "id": "expiresOn",
+                  "alias": "expiresOn",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "expiresOn",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"expiresOn\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
                 }
               },
               "key": "birftls4jx",
