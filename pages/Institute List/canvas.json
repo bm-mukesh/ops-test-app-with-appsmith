@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "MainPage",
-    "slug": "mainpage",
+    "name": "Institute List",
+    "slug": "institute-list",
     "layouts": [
       {
         "viewMode": false,
@@ -31,7 +31,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 18,
+              "topRow": 6,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -72,6 +72,24 @@
                 },
                 {
                   "key": "primaryColumns.customColumn1.computedValue"
+                },
+                {
+                  "key": "primaryColumns.customColumn3.computedValue"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.computedValue"
+                },
+                {
+                  "key": "primaryColumns.customColumn5.computedValue"
+                },
+                {
+                  "key": "primaryColumns.customColumn5.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.customColumn5.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.customColumn5.boxShadow"
                 }
               ],
               "needsHeightForContent": true,
@@ -110,46 +128,61 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1684830704728,
+              "columnUpdatedAt": 1684832042581,
               "defaultSelectedRowIndices": [
                 0
               ],
               "mobileBottomRow": 67,
-              "widgetName": "Table1",
+              "widgetName": "Institute_List",
               "defaultPageSize": 0,
               "columnOrder": [
+                "_id",
                 "isInhouse",
                 "instituteDomain",
                 "logo",
-                "_id",
                 "instituteName",
                 "isActive",
+                "customColumn5",
                 "registeredDetails",
-                "customColumn1"
+                "customColumn1",
+                "customColumn2",
+                "customColumn3"
               ],
               "dynamicPropertyPathList": [
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.customColumn5.onClick"
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 62,
+              "bottomRow": 50,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
                 "status": 85,
                 "version": 91,
-                "isInhouse": 110,
-                "logo": 107,
+                "isInhouse": 60,
+                "logo": 61,
                 "product": 215,
                 "instituteDomain": 110,
-                "isActive": 73
+                "isActive": 73,
+                "instituteName": 100,
+                "_id": 131,
+                "customColumn2": 116,
+                "customColumn4": 87,
+                "customColumn5": 86
               },
               "parentRowSpace": 10,
               "hideCard": false,
               "mobileRightColumn": 46,
               "parentColumnSpace": 17.625,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.customColumn5.onClick"
+                }
+              ],
               "borderWidth": "1",
               "primaryColumns": {
                 "isInhouse": {
@@ -177,7 +210,7 @@
                   "label": "isInhouse",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isInhouse\"]))}}",
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isInhouse\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -207,7 +240,7 @@
                   "label": "instituteDomain",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"instituteDomain\"]))}}",
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"instituteDomain\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -222,7 +255,7 @@
                   "alias": "logo",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "image",
                   "textColor": "",
                   "textSize": "0.875rem",
                   "fontStyle": "",
@@ -237,7 +270,7 @@
                   "label": "logo",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"logo\"]))}}",
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"logo\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -267,7 +300,7 @@
                   "label": "_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_id\"]))}}",
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -297,7 +330,7 @@
                   "label": "instituteName",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"instituteName\"]))}}",
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"instituteName\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -327,7 +360,7 @@
                   "label": "isActive",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isActive\"]))}}",
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isActive\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -357,7 +390,7 @@
                   "label": "registeredDetails",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredDetails\"].name))}}",
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredDetails\"].name))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -385,11 +418,103 @@
                   "label": "customColumn1",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredDetails\"].email))}}",
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredDetails\"].email))}}",
                   "sticky": "",
                   "validation": {},
                   "buttonStyle": "rgb(3, 179, 101)",
                   "labelColor": "#FFFFFF"
+                },
+                "customColumn2": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 8,
+                  "width": 150,
+                  "originalId": "customColumn2",
+                  "id": "customColumn2",
+                  "alias": "Register Name",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Register Name",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredDetails\"].userName))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF"
+                },
+                "customColumn3": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 9,
+                  "width": 150,
+                  "originalId": "customColumn3",
+                  "id": "customColumn3",
+                  "alias": "Register phone",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Register phone",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredDetails\"].phone))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF"
+                },
+                "customColumn5": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 10,
+                  "width": 150,
+                  "originalId": "customColumn5",
+                  "id": "customColumn5",
+                  "alias": "Action",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Action",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( ''))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF",
+                  "buttonColor": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+                  "borderRadius": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+                  "boxShadow": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+                  "customAlias": "",
+                  "onClick": "{{navigateTo('Institute Details', { \n\t\"editROw\" : currentRow\n //\"key\": \"value\",\n}, 'SAME_WINDOW');\n//save edit current Instute referance.\nstoreValue('editRow', currentRow._id)\n \n}}\n "
                 }
               },
               "key": "birftls4jx",
@@ -423,8 +548,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 14,
-              "bottomRow": 18,
+              "topRow": 2,
+              "bottomRow": 6,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -527,7 +652,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "MainPage_ApiInstitute",
+              "id": "Institute List_ApiInstitute",
               "name": "ApiInstitute",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -538,7 +663,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "MainPage",
+        "id": "Institute List",
         "deleted": false,
         "policies": [],
         "userPermissions": []
@@ -546,7 +671,7 @@
     ],
     "userPermissions": [],
     "policies": [],
-    "isHidden": true
+    "isHidden": false
   },
   "deleted": false,
   "gitSyncId": "64645d12a63f65753dcb2316_64645d12a63f65753dcb2318"

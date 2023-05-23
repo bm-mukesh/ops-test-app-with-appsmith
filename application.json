@@ -5,15 +5,15 @@
       "isDefault": true
     },
     {
-      "id": "MainPage",
+      "id": "Institute List",
       "isDefault": false
     },
     {
-      "id": "Add Institute JSON form",
+      "id": "Edit Institute",
       "isDefault": false
     },
     {
-      "id": "Add Institute Form",
+      "id": "Institute Details",
       "isDefault": false
     }
   ],
