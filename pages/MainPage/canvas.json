@@ -50,31 +50,7 @@
                   "key": "tableData"
                 },
                 {
-                  "key": "primaryColumns.EditActions1.saveButtonColor"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.saveBorderRadius"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.discardBorderRadius"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.isSaveDisabled"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
-                },
-                {
-                  "key": "primaryColumns.product.computedValue"
-                },
-                {
-                  "key": "primaryColumns.version.computedValue"
-                },
-                {
                   "key": "primaryColumns.isInhouse.computedValue"
-                },
-                {
-                  "key": "primaryColumns.name.computedValue"
                 },
                 {
                   "key": "primaryColumns.instituteDomain.computedValue"
@@ -83,10 +59,19 @@
                   "key": "primaryColumns.logo.computedValue"
                 },
                 {
-                  "key": "primaryColumns.contactDetails.computedValue"
+                  "key": "primaryColumns._id.computedValue"
                 },
                 {
-                  "key": "primaryColumns.RegisteredDetails.computedValue"
+                  "key": "primaryColumns.instituteName.computedValue"
+                },
+                {
+                  "key": "primaryColumns.isActive.computedValue"
+                },
+                {
+                  "key": "primaryColumns.registeredDetails.computedValue"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -125,7 +110,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1684410980015,
+              "columnUpdatedAt": 1684830704728,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -133,25 +118,18 @@
               "widgetName": "Table1",
               "defaultPageSize": 0,
               "columnOrder": [
-                "name",
-                "product",
-                "version",
                 "isInhouse",
                 "instituteDomain",
                 "logo",
-                "contactDetails",
-                "RegisteredDetails",
-                "EditActions1"
+                "_id",
+                "instituteName",
+                "isActive",
+                "registeredDetails",
+                "customColumn1"
               ],
               "dynamicPropertyPathList": [
                 {
                   "key": "tableData"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.isSaveDisabled"
-                },
-                {
-                  "key": "primaryColumns.EditActions1.isDiscardDisabled"
                 }
               ],
               "displayName": "Table",
@@ -163,7 +141,9 @@
                 "version": 91,
                 "isInhouse": 110,
                 "logo": 107,
-                "product": 215
+                "product": 215,
+                "instituteDomain": 110,
+                "isActive": 73
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -172,105 +152,6 @@
               "dynamicTriggerPathList": [],
               "borderWidth": "1",
               "primaryColumns": {
-                "EditActions1": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 8,
-                  "width": 150,
-                  "originalId": "EditActions1",
-                  "id": "EditActions1",
-                  "alias": "EditActions1",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "editActions",
-                  "textSize": "0.875rem",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": true,
-                  "label": "Save / Discard",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "",
-                  "sticky": "right",
-                  "validation": {},
-                  "buttonStyle": "rgb(3, 179, 101)",
-                  "saveIconAlign": "left",
-                  "discardIconAlign": "left",
-                  "saveActionLabel": "Save",
-                  "discardActionLabel": "Discard",
-                  "saveButtonColor": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-                  "discardButtonColor": "#F22B2B",
-                  "saveBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-                  "discardBorderRadius": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-                  "discardButtonVariant": "TERTIARY",
-                  "isSaveDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}",
-                  "isDiscardDisabled": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( !Table1.updatedRowIndices.includes(currentIndex)))}}"
-                },
-                "product": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 0,
-                  "width": 150,
-                  "originalId": "product",
-                  "id": "product",
-                  "alias": "product",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "product",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"product\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "version": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 1,
-                  "width": 150,
-                  "originalId": "version",
-                  "id": "version",
-                  "alias": "version",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "number",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": false,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "version",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"version\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
                 "isInhouse": {
                   "allowCellWrapping": false,
                   "allowSameOptionsInNewRow": true,
@@ -297,36 +178,6 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isInhouse\"]))}}",
-                  "sticky": "",
-                  "validation": {},
-                  "cellBackground": ""
-                },
-                "name": {
-                  "allowCellWrapping": false,
-                  "allowSameOptionsInNewRow": true,
-                  "index": 3,
-                  "width": 150,
-                  "originalId": "name",
-                  "id": "name",
-                  "alias": "name",
-                  "horizontalAlignment": "LEFT",
-                  "verticalAlignment": "CENTER",
-                  "columnType": "text",
-                  "textColor": "",
-                  "textSize": "0.875rem",
-                  "fontStyle": "",
-                  "enableFilter": true,
-                  "enableSort": true,
-                  "isVisible": true,
-                  "isDisabled": false,
-                  "isCellEditable": false,
-                  "isEditable": false,
-                  "isCellVisible": true,
-                  "isDerived": false,
-                  "label": "name",
-                  "isSaveVisible": true,
-                  "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -391,14 +242,14 @@
                   "validation": {},
                   "cellBackground": ""
                 },
-                "contactDetails": {
+                "_id": {
                   "allowCellWrapping": false,
                   "allowSameOptionsInNewRow": true,
-                  "index": 6,
+                  "index": 0,
                   "width": 150,
-                  "originalId": "contactDetails",
-                  "id": "contactDetails",
-                  "alias": "contactDetails",
+                  "originalId": "_id",
+                  "id": "_id",
+                  "alias": "_id",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -413,22 +264,22 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "contactDetails",
+                  "label": "_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"contactDetails\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
                 },
-                "RegisteredDetails": {
+                "instituteName": {
                   "allowCellWrapping": false,
                   "allowSameOptionsInNewRow": true,
-                  "index": 7,
+                  "index": 1,
                   "width": 150,
-                  "originalId": "RegisteredDetails",
-                  "id": "RegisteredDetails",
-                  "alias": "RegisteredDetails",
+                  "originalId": "instituteName",
+                  "id": "instituteName",
+                  "alias": "instituteName",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -443,13 +294,102 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "RegisteredDetails",
+                  "label": "instituteName",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"RegisteredDetails\"]))}}",
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"instituteName\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
+                },
+                "isActive": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "isActive",
+                  "id": "isActive",
+                  "alias": "isActive",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "checkbox",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "isActive",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"isActive\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "registeredDetails": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 6,
+                  "width": 150,
+                  "originalId": "registeredDetails",
+                  "id": "registeredDetails",
+                  "alias": "registeredDetails",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "registeredDetails",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredDetails\"].name))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "customColumn1": {
+                  "allowCellWrapping": false,
+                  "allowSameOptionsInNewRow": true,
+                  "index": 7,
+                  "width": 150,
+                  "originalId": "customColumn1",
+                  "id": "customColumn1",
+                  "alias": " ",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "customColumn1",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredDetails\"].email))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF"
                 }
               },
               "key": "birftls4jx",
