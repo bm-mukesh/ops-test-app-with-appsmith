@@ -48,7 +48,7 @@
   },
   "color": "#C7F3E3",
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "TABLET_LARGE"
   },
   "publishedAppLayout": {
     "type": "FLUID"

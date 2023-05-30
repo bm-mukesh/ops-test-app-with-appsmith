@@ -834,7 +834,7 @@
                       ],
                       "defaultImage": "https://assets.appsmith.com/widgets/default.png",
                       "key": "ojecuv4zmu",
-                      "image": "  {{ appsmith.store.editRow.logo}}",
+                      "image": "  {{ \nappsmith.store.editRow.logo\n}}",
                       "isDeprecated": false,
                       "rightColumn": 8,
                       "objectFit": "cover",
@@ -1169,7 +1169,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 3,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 77,
+              "originalBottomRow": 86,
               "minDynamicHeight": 10
             }
           ]

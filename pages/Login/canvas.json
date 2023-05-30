@@ -135,7 +135,7 @@
                       "boxShadow": "none",
                       "mobileBottomRow": 37,
                       "widgetName": "Button1",
-                      "onClick": "{{login.run(()=>{\n\t\nconst jwt = login.data.jwt; \nif(jwt){\n\tstoreValue('jwt', jwt);\n\tnavigateTo('MainPage',{})\n}else{\n\tshowAlert('Invalid Username & password')\n}\n\n\n})}}",
+                      "onClick": "{{\nlogin.run(()=>{\n\t\nconst jwt = login.data.jwt;\n\t\nif(jwt){\n\tstoreValue('jwt', jwt);\n\tnavigateTo('Institute List',{})\n}else{\n\tshowAlert('Invalid Username & password')\n}\n\n})\n}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
                         {
