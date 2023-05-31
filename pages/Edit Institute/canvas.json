@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 770,
+          "bottomRow": 830,
           "containerStyle": "none",
           "snapRows": 83,
           "parentRowSpace": 1,
@@ -26,6 +26,66 @@
           "leftColumn": 0,
           "children": [
             {
+              "mobileBottomRow": 16,
+              "widgetName": "Text1Copy1",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 2,
+              "bottomRow": 7,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 17,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 18.28125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Edit Institute",
+              "key": "6e6r59czma",
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "p9um31l697",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 12,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 2,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 1,
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 7,
+              "fontSize": "1.875rem",
+              "minDynamicHeight": 4
+            },
+            {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "mobileBottomRow": 49,
               "borderColor": "#E0DEDE",
@@ -37,8 +97,8 @@
               "searchTags": [
                 "group"
               ],
-              "topRow": 2,
-              "bottomRow": 77,
+              "topRow": 8,
+              "bottomRow": 83,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -1009,7 +1069,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "dateFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
+                      "dateFormat": "DD/MM/YYYY",
                       "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
                       "topRow": 25,
                       "labelWidth": 5,
@@ -1071,7 +1131,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "dateFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
+                      "dateFormat": "DD/MM/YYYY",
                       "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
                       "topRow": 25,
                       "labelWidth": 5,
@@ -1165,11 +1225,11 @@
               "isLoading": false,
               "mobileTopRow": 9,
               "responsiveBehavior": "fill",
-              "originalTopRow": 2,
+              "originalTopRow": 8,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 3,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 86,
+              "originalBottomRow": 83,
               "minDynamicHeight": 10
             }
           ]

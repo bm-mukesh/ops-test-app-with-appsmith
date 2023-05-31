@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 590,
+          "bottomRow": 600,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -31,7 +31,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 7,
+              "topRow": 8,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -143,8 +143,8 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1685429722838,
-              "originalBottomRow": 78,
+              "columnUpdatedAt": 1685526519553,
+              "originalBottomRow": 60,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -163,9 +163,9 @@
                 "registeredDetails",
                 "customColumn1",
                 "customColumn2",
+                "expiresOn",
                 "customColumn3",
-                "registeredOn",
-                "expiresOn"
+                "registeredOn"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -176,17 +176,23 @@
                 },
                 {
                   "key": "primaryColumns.customColumn6.onClick"
+                },
+                {
+                  "key": "primaryColumns.logo.isCellVisible"
+                },
+                {
+                  "key": "primaryColumns.registeredDetails.isCellVisible"
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 59,
+              "bottomRow": 60,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
                 "status": 85,
                 "version": 91,
                 "isInhouse": 60,
-                "logo": 61,
+                "logo": 110,
                 "product": 215,
                 "instituteDomain": 110,
                 "isActive": 73,
@@ -287,13 +293,13 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": false,
+                  "isVisible": true,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
-                  "isCellVisible": true,
+                  "isCellVisible": "false",
                   "isDerived": false,
-                  "label": "Logo",
+                  "label": "",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"logo\"]))}}",
@@ -407,13 +413,13 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": false,
+                  "isVisible": true,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
-                  "isCellVisible": true,
+                  "isCellVisible": "false",
                   "isDerived": false,
-                  "label": "registeredFullName",
+                  "label": "column3",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredDetails\"].name))}}",
@@ -600,7 +606,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "registeredOn",
+                  "label": "column",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"registeredOn\"]))}}",
@@ -624,13 +630,13 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": false,
+                  "isVisible": true,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "expiresOn",
+                  "label": "column2",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{Institute_List.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"expiresOn\"]))}}",
@@ -656,7 +662,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 6,
+              "originalTopRow": 8,
               "mobileLeftColumn": 12,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
@@ -672,7 +678,7 @@
                 "label"
               ],
               "topRow": 2,
-              "bottomRow": 6,
+              "bottomRow": 7,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -699,7 +705,7 @@
               "text": "Institute list",
               "key": "6e6r59czma",
               "isDeprecated": false,
-              "rightColumn": 17,
+              "rightColumn": 63,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "eyigajuimy",
@@ -717,8 +723,8 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 1,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 6,
-              "fontSize": "1rem",
+              "originalBottomRow": 7,
+              "fontSize": "1.875rem",
               "minDynamicHeight": 4
             }
           ]
