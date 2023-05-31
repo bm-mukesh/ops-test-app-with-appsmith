@@ -15,6 +15,10 @@
     {
       "id": "Institute Details",
       "isDefault": false
+    },
+    {
+      "id": "Dashboard",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -23,11 +27,11 @@
   "unpublishedApplicationDetail": {
     "navigationSetting": {
       "showNavbar": true,
-      "orientation": "top",
-      "navStyle": "stacked",
+      "orientation": "side",
+      "navStyle": "sidebar",
       "position": "static",
       "itemStyle": "text",
-      "colorStyle": "light",
+      "colorStyle": "theme",
       "logoAssetId": "64645eb4a63f65753dcb2326",
       "logoConfiguration": "logoAndApplicationTitle",
       "showSignIn": true
@@ -51,7 +55,7 @@
     "type": "TABLET_LARGE"
   },
   "publishedAppLayout": {
-    "type": "FLUID"
+    "type": "TABLET_LARGE"
   },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
