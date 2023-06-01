@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 600,
+          "bottomRow": 650,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -31,7 +31,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 8,
+              "topRow": 13,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -144,7 +144,7 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "columnUpdatedAt": 1685526519553,
-              "originalBottomRow": 60,
+              "originalBottomRow": 64,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -185,7 +185,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 60,
+              "bottomRow": 65,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -662,7 +662,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 8,
+              "originalTopRow": 12,
               "mobileLeftColumn": 12,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
@@ -726,6 +726,65 @@
               "originalBottomRow": 7,
               "fontSize": "1.875rem",
               "minDynamicHeight": 4
+            },
+            {
+              "boxShadow": "none",
+              "mobileBottomRow": 12,
+              "widgetName": "IconButton1",
+              "onClick": "{{navigateTo('Edit Institute', {}, 'SAME_WINDOW');\n//Remove current value for add form\nremoveValue(\"editRow\")\n    \n}}\n ",
+              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "displayName": "Icon Button",
+              "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
+              "searchTags": [
+                "click",
+                "submit"
+              ],
+              "topRow": 8,
+              "bottomRow": 12,
+              "parentRowSpace": 10,
+              "type": "ICON_BUTTON_WIDGET",
+              "hideCard": false,
+              "mobileRightColumn": 63,
+              "animateLoading": true,
+              "parentColumnSpace": 16.6875,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 60,
+              "dynamicBindingPathList": [
+                {
+                  "key": "buttonColor"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "isDisabled": false,
+              "key": "dlkr80i4bg",
+              "isDeprecated": false,
+              "rightColumn": 63,
+              "iconName": "plus",
+              "widgetId": "57tkf5ongs",
+              "minWidth": 50,
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "mobileTopRow": 8,
+              "responsiveBehavior": "hug",
+              "originalTopRow": 8,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "mobileLeftColumn": 59,
+              "originalBottomRow": 12,
+              "buttonVariant": "PRIMARY"
             }
           ]
         },

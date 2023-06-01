@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1080,
+          "bottomRow": 1090,
           "containerStyle": "none",
           "snapRows": 83,
           "parentRowSpace": 1,
@@ -98,7 +98,7 @@
                 "group"
               ],
               "topRow": 8,
-              "bottomRow": 108,
+              "bottomRow": 109,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -121,7 +121,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 1000,
+                  "bottomRow": 1010,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -201,7 +201,7 @@
                         "group"
                       ],
                       "topRow": 6,
-                      "bottomRow": 93,
+                      "bottomRow": 94,
                       "parentRowSpace": 10,
                       "type": "CONTAINER_WIDGET",
                       "hideCard": false,
@@ -224,7 +224,7 @@
                           "widgetName": "Canvas2",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 870,
+                          "bottomRow": 880,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -248,8 +248,8 @@
                                 "parent",
                                 "group"
                               ],
-                              "topRow": 61,
-                              "bottomRow": 77,
+                              "topRow": 62,
+                              "bottomRow": 78,
                               "parentRowSpace": 10,
                               "type": "CONTAINER_WIDGET",
                               "hideCard": false,
@@ -305,6 +305,7 @@
                                         }
                                       ],
                                       "labelStyle": "",
+                                      "placeholderText": "9876543210",
                                       "isDisabled": false,
                                       "isRequired": false,
                                       "dynamicHeight": "FIXED",
@@ -372,6 +373,7 @@
                                       ],
                                       "labelStyle": "",
                                       "inputType": "TEXT",
+                                      "placeholderText": "John ",
                                       "isDisabled": false,
                                       "isRequired": false,
                                       "dynamicHeight": "FIXED",
@@ -437,9 +439,9 @@
                               "renderMode": "CANVAS",
                               "isLoading": false,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 61,
+                              "originalTopRow": 62,
                               "maxDynamicHeight": 9000,
-                              "originalBottomRow": 77,
+                              "originalBottomRow": 78,
                               "minDynamicHeight": 10
                             },
                             {
@@ -513,6 +515,7 @@
                                       ],
                                       "labelStyle": "",
                                       "inputType": "EMAIL",
+                                      "placeholderText": "test@sample.com",
                                       "isDisabled": false,
                                       "isRequired": false,
                                       "dynamicHeight": "FIXED",
@@ -579,6 +582,7 @@
                                       ],
                                       "labelStyle": "",
                                       "inputType": "TEXT",
+                                      "placeholderText": "Dow",
                                       "isDisabled": false,
                                       "isRequired": false,
                                       "dynamicHeight": "FIXED",
@@ -671,6 +675,7 @@
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
+                              "placeholderText": "Institute Name",
                               "isDisabled": false,
                               "isRequired": false,
                               "dynamicHeight": "FIXED",
@@ -740,6 +745,7 @@
                               ],
                               "labelStyle": "",
                               "inputType": "TEXT",
+                              "placeholderText": "smartclasses.bemasterly.com",
                               "isDisabled": false,
                               "isRequired": false,
                               "dynamicHeight": "FIXED",
@@ -842,8 +848,8 @@
                               "searchTags": [
                                 "upload"
                               ],
-                              "topRow": 34,
-                              "bottomRow": 38,
+                              "topRow": 35,
+                              "bottomRow": 39,
                               "parentRowSpace": 10,
                               "allowedFileTypes": [],
                               "type": "FILE_PICKER_WIDGET_V2",
@@ -852,7 +858,7 @@
                               "animateLoading": true,
                               "parentColumnSpace": 15.98828125,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 22,
+                              "leftColumn": 27,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "buttonColor"
@@ -865,7 +871,7 @@
                               "key": "56mnxc4hv0",
                               "isRequired": false,
                               "isDeprecated": false,
-                              "rightColumn": 45,
+                              "rightColumn": 40,
                               "isDefaultClickDisabled": true,
                               "widgetId": "030ftvtah3",
                               "minWidth": 120,
@@ -897,8 +903,8 @@
                               "searchTags": [
                                 "line"
                               ],
-                              "topRow": 38,
-                              "bottomRow": 42,
+                              "topRow": 39,
+                              "bottomRow": 43,
                               "parentRowSpace": 10,
                               "type": "DIVIDER_WIDGET",
                               "capType": "nc",
@@ -931,7 +937,7 @@
                               "boxShadow": "none",
                               "dateFormat": "DD/MM/YYYY",
                               "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
-                              "topRow": 46,
+                              "topRow": 47,
                               "labelWidth": 5,
                               "type": "DATE_PICKER_WIDGET2",
                               "animateLoading": true,
@@ -964,7 +970,7 @@
                               "searchTags": [
                                 "calendar"
                               ],
-                              "bottomRow": 53,
+                              "bottomRow": 54,
                               "shortcuts": false,
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -1000,8 +1006,8 @@
                               "searchTags": [
                                 "line"
                               ],
-                              "topRow": 53,
-                              "bottomRow": 57,
+                              "topRow": 54,
+                              "bottomRow": 58,
                               "parentRowSpace": 10,
                               "type": "DIVIDER_WIDGET",
                               "capType": "nc",
@@ -1042,8 +1048,8 @@
                                 "paragraph",
                                 "label"
                               ],
-                              "topRow": 57,
-                              "bottomRow": 61,
+                              "topRow": 58,
+                              "bottomRow": 62,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,
                               "mobileRightColumn": 25.5,
@@ -1098,8 +1104,8 @@
                               "searchTags": [
                                 "boolean"
                               ],
-                              "topRow": 42,
-                              "bottomRow": 46,
+                              "topRow": 43,
+                              "bottomRow": 47,
                               "parentRowSpace": 10,
                               "type": "CHECKBOX_WIDGET",
                               "alignWidget": "LEFT",
@@ -1147,7 +1153,7 @@
                               "boxShadow": "none",
                               "dateFormat": "DD/MM/YYYY",
                               "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
-                              "topRow": 43,
+                              "topRow": 46,
                               "labelWidth": 5,
                               "type": "DATE_PICKER_WIDGET2",
                               "animateLoading": true,
@@ -1180,7 +1186,7 @@
                               "searchTags": [
                                 "calendar"
                               ],
-                              "bottomRow": 50,
+                              "bottomRow": 53,
                               "shortcuts": false,
                               "parentRowSpace": 10,
                               "hideCard": false,
@@ -1216,8 +1222,8 @@
                               "searchTags": [
                                 "line"
                               ],
-                              "topRow": 77,
-                              "bottomRow": 81,
+                              "topRow": 78,
+                              "bottomRow": 82,
                               "parentRowSpace": 10,
                               "type": "DIVIDER_WIDGET",
                               "capType": "nc",
@@ -1244,9 +1250,9 @@
                               "isLoading": false,
                               "mobileTopRow": 24,
                               "responsiveBehavior": "fill",
-                              "originalTopRow": 77,
+                              "originalTopRow": 78,
                               "mobileLeftColumn": 1,
-                              "originalBottomRow": 81
+                              "originalBottomRow": 82
                             },
                             {
                               "mobileBottomRow": 28,
@@ -1307,8 +1313,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 81,
-                              "bottomRow": 85,
+                              "topRow": 82,
+                              "bottomRow": 86,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "mobileRightColumn": 62,
@@ -1338,11 +1344,11 @@
                               "isLoading": false,
                               "mobileTopRow": 33,
                               "responsiveBehavior": "hug",
-                              "originalTopRow": 81,
+                              "originalTopRow": 82,
                               "disabledWhenInvalid": true,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "mobileLeftColumn": 46,
-                              "originalBottomRow": 85,
+                              "originalBottomRow": 86,
                               "buttonVariant": "PRIMARY",
                               "placement": "CENTER"
                             },
@@ -1358,8 +1364,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 81,
-                              "bottomRow": 85,
+                              "topRow": 82,
+                              "bottomRow": 86,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "mobileRightColumn": 46,
@@ -1389,11 +1395,11 @@
                               "isLoading": false,
                               "mobileTopRow": 33,
                               "responsiveBehavior": "hug",
-                              "originalTopRow": 81,
+                              "originalTopRow": 82,
                               "disabledWhenInvalid": false,
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "mobileLeftColumn": 30,
-                              "originalBottomRow": 85,
+                              "originalBottomRow": 86,
                               "buttonVariant": "SECONDARY",
                               "placement": "CENTER"
                             }
@@ -1437,7 +1443,7 @@
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "mobileLeftColumn": 22,
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 93,
+                      "originalBottomRow": 94,
                       "minDynamicHeight": 10
                     },
                     {
@@ -1449,8 +1455,8 @@
                       "searchTags": [
                         "line"
                       ],
-                      "topRow": 94,
-                      "bottomRow": 98,
+                      "topRow": 95,
+                      "bottomRow": 99,
                       "parentRowSpace": 10,
                       "type": "DIVIDER_WIDGET",
                       "capType": "nc",
@@ -1477,9 +1483,9 @@
                       "isLoading": false,
                       "mobileTopRow": 24,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 94,
+                      "originalTopRow": 95,
                       "mobileLeftColumn": 1,
-                      "originalBottomRow": 98
+                      "originalBottomRow": 99
                     }
                   ],
                   "key": "86azx0xmr8",
@@ -1519,7 +1525,7 @@
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "mobileLeftColumn": 3,
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 108,
+              "originalBottomRow": 109,
               "minDynamicHeight": 10
             }
           ]
